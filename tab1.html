@@ -1,0 +1,18 @@
+<!-- <div class="content-1"> -->
+<h2>TAB 1</h2>
+
+<section id="tab1Feature">
+    Filter: <select ng-model="filterItem.store" ng-options="item.name for item in filterOptions.stores">
+						</select>
+
+    <p>
+        <strong>Selected Filter dropdown item: </strong> {{filterItem.store.name}}
+    </p>
+
+    <ul>
+        <li data-ng-repeat="item in data | filter:customFilter">
+            {{item.name}}</li>
+    </ul>
+</section>
+
+<!-- </div> -->

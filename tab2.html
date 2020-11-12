@@ -1,0 +1,13 @@
+<!-- <div class="content-2"> -->
+
+<h2>TAB 2</h2>
+<section id="tab2Feature">
+    <h1>Click on the {{name}}</h1>
+    <section id="imgContainer" ng-model="imgContainer">
+        <img src="{{imgSrc}}" width="200px" height="200px" alt="{{imgSrc}}" />
+    </section>
+    <ul id="thumbnails">
+        <li class="thumbnail" ng-repeat="item in items" options='#my-container' itemdata='item' index="$index" ng-click='mythumb()'><img src="{{item.src}}" alt="{{item.alt}}" /></li>
+    </ul>
+</section>
+<!-- </div> -->
